@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projects | Stephen Cherlapally</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#137fec",
+            "background-light": "#fcfcfc",
+            "background-dark": "#101922",
+          },
+          fontFamily: { display: ["Manrope", "sans-serif"] },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css" />
+  <script defer src="assets/site.js"></script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+<a id="top"></a>
+<header class="sticky top-0 z-50 w-full border-b border-slate-200/60 dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 glass">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
+    <a class="flex items-center gap-3" href="index.html" aria-label="Go to Home">
+      <div class="size-9 bg-primary rounded-xl flex items-center justify-center text-white shadow-sm">
+        <span class="material-symbols-outlined text-xl">deployed_code</span>
+      </div>
+      <div class="leading-tight">
+        <div class="text-sm font-extrabold tracking-tight">Stephen Cherlapally</div>
+        <div class="text-[11px] text-slate-500 dark:text-slate-400 -mt-0.5">Senior Unreal Engine Developer</div>
+      </div>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-10">
+      <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="experience.html">Experience</a>
+<a class="text-sm font-bold text-primary border-b-2 border-primary pb-1" href="projects.html">Projects</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="contact.html">Contact</a>
+
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a class="hidden sm:inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-bold text-white hover:bg-primary/90 transition shadow-lg shadow-primary/20" href="assets/Stephen_Cherlapally_Resume.pdf" target="_blank" rel="noreferrer">
+        <span class="material-symbols-outlined text-[18px]">download</span>
+        Resume
+      </a>
+      <button data-theme-toggle onclick="toggleTheme()" class="inline-flex items-center justify-center size-10 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition" aria-label="Toggle dark mode">
+        <span class="material-symbols-outlined text-[20px]">dark_mode</span>
+      </button>
+      <button onclick="toggleMenu()" class="md:hidden inline-flex items-center justify-center size-10 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition" aria-label="Open menu">
+        <span class="material-symbols-outlined text-[22px]">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div data-mobile-menu class="md:hidden hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-background-dark/95 glass">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="grid gap-1">
+        <a class="block px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 " href="index.html">Home</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 " href="experience.html">Experience</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-primary font-bold" href="projects.html">Projects</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 " href="contact.html">Contact</a>
+
+        <a class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-primary py-3 text-sm font-bold text-white" href="assets/Stephen_Cherlapally_Resume.pdf" target="_blank" rel="noreferrer">
+          <span class="material-symbols-outlined text-[18px]">download</span>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main class="max-w-7xl mx-auto px-6 lg:px-12 py-14">
+  <a id="projects"></a>
+  <div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-10">
+    <div class="max-w-3xl">
+      <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Projects</h1>
+      <p class="mt-4 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+        A curated selection of work across Unreal tools, 360 rendering pipelines, HMI design, and VR gameplay.
+      </p>
+    </div>
+    <div class="flex items-center gap-3">
+      <a class="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white hover:bg-primary/90 transition" href="contact.html">
+        Hire / Collaborate
+        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Featured: Creator Tools -->
+  <section class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 overflow-hidden shadow-sm mb-12">
+    <div class="p-8 lg:p-10">
+      <div class="flex items-center gap-2 mb-3">
+        <span class="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-xs font-bold uppercase tracking-widest text-primary">Featured</span>
+        <span class="text-sm text-slate-500">Creator Tools Plugin</span>
+      </div>
+      <h2 class="text-3xl font-extrabold tracking-tight mb-3">Automated 360 content generation for enterprise workflows</h2>
+      <p class="text-slate-600 dark:text-slate-400 max-w-3xl leading-relaxed">
+        Production-grade Unreal plugin that automates 360 capture, stitching, and packaging — including multiple pipelines (6 faces, split, 32 faces).
+        Includes secure distribution patterns and first-launch dependency setup.
+      </p>
+
+      <div class="mt-7 grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+        <div class="lg:col-span-7">
+          <div class="aspect-video rounded-2xl border border-slate-200 dark:border-slate-800 bg-slate-100 dark:bg-slate-800/40 overflow-hidden flex items-center justify-center">
+            <!-- Replace src with your video file (assets/creator-tools.mp4) OR swap this for a YouTube/Vimeo iframe. -->
+            <video 
+            class="w-full h-auto rounded-xl"
+            autoplay
+            muted
+            loop
+            playsinline
+            >
+            <source src="assets/CreatorTools.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="lg:col-span-5 space-y-4">
+          <div class="rounded-2xl border border-slate-200 dark:border-slate-800 p-6 bg-white/60 dark:bg-slate-900/20">
+            <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Highlights</p>
+            <ul class="space-y-2 text-sm text-slate-700 dark:text-slate-300">
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>6 Faces / 6 Faces Split / 32 Faces Split pipelines</span></li>
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>FFmpeg-based stitching automation and upscaling integration</span></li>
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Secure plugin distribution via external static library</span></li>
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>First-launch dependency setup for end users</span></li>
+            </ul>
+          </div>
+
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold">Unreal C++</span>
+            <span class="px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold">Rendering</span>
+            <span class="px-3 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-bold">Tooling</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Grid -->
+  <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Hummer EV -->
+    <article data-project-card class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 overflow-hidden hover:shadow-md transition">
+      <div data-project-toggle tabindex="0" role="button" aria-expanded="false" class="p-6 outline-none">
+        <div class="flex items-center justify-between">
+          <span class="inline-flex items-center rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1 text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">HMI</span>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-slate-400">directions_car</span>
+            <span class="material-symbols-outlined project-chevron text-slate-400">expand_more</span>
+          </div>
+        </div>
+        <h3 class="mt-4 text-xl font-extrabold">Hummer EV Dashboard (3D HMI)</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+          Unreal-based dashboard/HMI work for automotive UX, with performance optimizations and shader-driven reflections.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">Unreal</span>
+          <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">UI/UX</span>
+          <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">Android</span>
+        </div>
+      </div>
+      <div class="project-details border-t border-slate-200 dark:border-slate-800">
+        <div class="p-6">
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            This section showcases Unreal Engine HMI graphics for an automotive dashboard: calibration screens, time-of-day theme switching, speedometer & tachometer clusters, tyre-pressure monitoring, plus supporting UI elements like alerts, indicators, and status panels.
+          </p>
+          <div class="mt-4">
+            <video 
+                class="w-full rounded-xl shadow-md"
+                controls
+                autoplay
+                muted
+                loop
+                playsinline
+            >
+                <source src="assets/HummerInfotainment.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- Multiplayer title -->
+    <article data-project-card class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 overflow-hidden hover:shadow-md transition">
+      <div data-project-toggle tabindex="0" role="button" aria-expanded="false" class="p-6 outline-none">
+        <div class="flex items-center justify-between">
+          <span class="inline-flex items-center rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1 text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">Game</span>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-slate-400">sports_esports</span>
+            <span class="material-symbols-outlined project-chevron text-slate-400">expand_more</span>
+          </div>
+        </div>
+        <h3 class="mt-4 text-xl font-extrabold">3v3 Multiplayer Gameplay Systems</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+          GAS-based abilities, replicated AoE combat, and bandwidth-aware replication for competitive play.
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">GAS</span>
+          <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">Replication</span>
+          <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">Optimization</span>
+        </div>
+      </div>
+      <div class="project-details border-t border-slate-200 dark:border-slate-800">
+        <div class="p-6">
+            
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            This multiplayer project involved replicated gameplay abilities, projectile systems, 
+            and latency-aware mechanics built using Unreal Engine’s networking framework.
+            Due to an NDA agreement signed with the company, gameplay footage and source 
+            materials cannot be publicly shared.
+            </p>
+
+            <div class="mt-6">
+            <img 
+                src="assets/Nda.png" 
+                alt="NDA Notice"
+                class="w-full rounded-xl shadow-md"
+            />
+            </div>
+
+            <p class="mt-6 text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+            <strong>Project Note:</strong> Bomber Heads was discontinued shortly after my departure,
+            and the team was subsequently laid off as part of a company restructuring.
+            </p>
+
+        </div>
+        </div>
+    </article>
+
+    <!-- VR projects -->
+    <article data-project-card class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 overflow-hidden hover:shadow-md transition">
+      <div data-project-toggle tabindex="0" role="button" aria-expanded="false" class="p-6 outline-none">
+        <div class="flex items-center justify-between">
+          <span class="inline-flex items-center rounded-full bg-slate-100 dark:bg-slate-800 px-3 py-1 text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-300">VR</span>
+          <div class="flex items-center gap-2">
+            <span class="material-symbols-outlined text-slate-400">view_in_ar</span>
+            <span class="material-symbols-outlined project-chevron text-slate-400">expand_more</span>
+          </div>
+        </div>
+        <h3 class="mt-4 text-xl font-extrabold">Loop Reality VR Experiences</h3>
+        <p class="mt-2 text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+          Multiplayer VR systems and interactive experiences across desktop VR and mobile platforms (Oculus Go / Android / iOS).
+        </p>
+        <div class="mt-4 flex flex-wrap gap-2">
+          <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">VR</span>
+          <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">Multiplayer</span>
+          <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">Cross-platform</span>
+        </div>
+      </div>
+      <div class="project-details border-t border-slate-200 dark:border-slate-800">
+        <div class="p-6">
+          <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+            <p class="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                Multiple VR, AR, and mobile game projects I contributed to during my time at Loop Reality, spanning interactive simulations, immersive gameplay experiences, and cross-platform deployments.
+          </p>
+            <div class="mt-4">
+            <video 
+                class="w-full rounded-xl shadow-md"
+                controls
+                autoplay
+                muted
+                loop
+                playsinline
+            >
+                <source src="assets/LoopReality.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  
+</main>
+
+
+<footer class="border-t border-slate-200 dark:border-slate-800 py-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-slate-500">© <span data-year></span> Stephen Cherlapally. All rights reserved.</p>
+    <div class="flex items-center gap-5 text-sm">
+      <a class="text-slate-500 hover:text-primary" href="projects.html">Projects</a>
+      <a class="text-slate-500 hover:text-primary" href="experience.html">Experience</a>
+      <a class="text-slate-500 hover:text-primary" href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Experience | Stephen Cherlapally</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#137fec",
+            "background-light": "#fcfcfc",
+            "background-dark": "#101922",
+          },
+          fontFamily: { display: ["Manrope", "sans-serif"] },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css" />
+  <script defer src="assets/site.js"></script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+<a id="top"></a>
+<header class="sticky top-0 z-50 w-full border-b border-slate-200/60 dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 glass">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
+    <a class="flex items-center gap-3" href="index.html" aria-label="Go to Home">
+      <div class="size-9 bg-primary rounded-xl flex items-center justify-center text-white shadow-sm">
+        <span class="material-symbols-outlined text-xl">deployed_code</span>
+      </div>
+      <div class="leading-tight">
+        <div class="text-sm font-extrabold tracking-tight">Stephen Cherlapally</div>
+        <div class="text-[11px] text-slate-500 dark:text-slate-400 -mt-0.5">Senior Unreal Engine Developer</div>
+      </div>
+    </a>
+
+    <nav class="hidden md:flex items-center gap-10">
+      <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-bold text-primary border-b-2 border-primary pb-1" href="experience.html">Experience</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="projects.html">Projects</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="contact.html">Contact</a>
+
+    </nav>
+
+    <div class="flex items-center gap-2">
+      <a class="hidden sm:inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-bold text-white hover:bg-primary/90 transition shadow-lg shadow-primary/20" href="assets/Stephen_Cherlapally_Resume.pdf" target="_blank" rel="noreferrer">
+        <span class="material-symbols-outlined text-[18px]">download</span>
+        Resume
+      </a>
+      <button data-theme-toggle onclick="toggleTheme()" class="inline-flex items-center justify-center size-10 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition" aria-label="Toggle dark mode">
+        <span class="material-symbols-outlined text-[20px]">dark_mode</span>
+      </button>
+      <button onclick="toggleMenu()" class="md:hidden inline-flex items-center justify-center size-10 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition" aria-label="Open menu">
+        <span class="material-symbols-outlined text-[22px]">menu</span>
+      </button>
+    </div>
+  </div>
+
+  <div data-mobile-menu class="md:hidden hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-background-dark/95 glass">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="grid gap-1">
+        <a class="block px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 " href="index.html">Home</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-primary font-bold" href="experience.html">Experience</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 " href="projects.html">Projects</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 " href="contact.html">Contact</a>
+
+        <a class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-primary py-3 text-sm font-bold text-white" href="assets/Stephen_Cherlapally_Resume.pdf" target="_blank" rel="noreferrer">
+          <span class="material-symbols-outlined text-[18px]">download</span>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main class="max-w-7xl mx-auto px-6 lg:px-12 py-14">
+  <a id="experience"></a>
+  <div class="max-w-3xl mb-12">
+    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Experience & <span class="text-primary">Skills</span></h1>
+    <p class="mt-5 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+      A focused timeline of the work I’ve shipped — spanning gameplay systems, multiplayer networking, and Unreal tooling.
+    </p>
+    <div class="mt-7 flex flex-wrap gap-3">
+      <a class="inline-flex items-center gap-2 rounded-xl bg-primary px-6 py-3 text-sm font-bold text-white hover:bg-primary/90 transition"
+         href="assets/Stephen_Cherlapally_Resume.pdf" target="_blank" rel="noreferrer">
+        <span class="material-symbols-outlined text-[18px]">download</span>
+        Download Resume
+      </a>
+      <a class="inline-flex items-center gap-2 rounded-xl border border-slate-200 dark:border-slate-800 px-6 py-3 text-sm font-bold hover:bg-slate-50 dark:hover:bg-slate-800 transition"
+         href="projects.html">
+        View Projects
+        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+    <section class="lg:col-span-8">
+      <div class="flex items-center gap-2 mb-6">
+        <span class="material-symbols-outlined text-primary">work</span>
+        <h2 class="text-2xl font-bold">Professional Journey</h2>
+      </div>
+
+      <div class="relative">
+        <div class="absolute left-5 top-3 bottom-3 w-[2px] bg-slate-200 dark:bg-slate-800"></div>
+
+        <!-- EmperiaVR -->
+        <div class="relative flex gap-6 pb-10">
+          <div class="relative z-10 size-11 rounded-full bg-white dark:bg-slate-900 border-2 border-primary flex items-center justify-center shadow-sm">
+            <span class="material-symbols-outlined text-primary">precision_manufacturing</span>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h3 class="text-xl font-extrabold">Senior Unreal Developer — EmperiaVR</h3>
+              <span class="text-xs font-bold uppercase tracking-widest text-slate-500 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">Mar 2023 — Present</span>
+            </div>
+            <p class="mt-2 text-slate-600 dark:text-slate-400">London, UK (Remote)</p>
+            <ul class="mt-4 space-y-2 text-slate-700 dark:text-slate-300">
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Architected and maintained the Creator Tools Plugin for automated 360 content generation and enterprise deployment.</span></li>
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Authored 6 Faces, 6 Faces Split, and 32 Faces Split pipelines for scalable high-resolution panorama generation.</span></li>
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Built capture pipelines integrating COLMAP workflows + point cloud generation to prepare datasets for Gaussian Splat training.</span></li>
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Implemented secure distribution by isolating sensitive logic in a separate C++ static library integrated into the plugin.</span></li>
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Designed automated dependency setup (FFmpeg + upscaling models) on first launch for smoother end-user onboarding.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- PTW -->
+        <div class="relative flex gap-6 pb-10">
+          <div class="relative z-10 size-11 rounded-full bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-800 flex items-center justify-center">
+            <span class="material-symbols-outlined text-slate-500">sports_esports</span>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h3 class="text-xl font-extrabold">Software Engineer — PTW International</h3>
+              <span class="text-xs font-bold uppercase tracking-widest text-slate-500 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">Jun 2021 — Feb 2023</span>
+            </div>
+            <p class="mt-2 text-slate-600 dark:text-slate-400">Hyderabad, India • Project: Bomber Heads (3v3 Online Multiplayer)</p>
+            <ul class="mt-4 space-y-2 text-slate-700 dark:text-slate-300">
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Implemented core gameplay systems and a full GAS framework (abilities, attributes, effects, cooldowns).</span></li>
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Developed replicated AoE combat systems with server-authoritative damage + effect propagation.</span></li>
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Optimized multiplayer bandwidth using selective replication and custom encoding strategies.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- People Tech -->
+        <div class="relative flex gap-6 pb-10">
+          <div class="relative z-10 size-11 rounded-full bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-800 flex items-center justify-center">
+            <span class="material-symbols-outlined text-slate-500">directions_car</span>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h3 class="text-xl font-extrabold">Unreal Developer — People Tech Group</h3>
+              <span class="text-xs font-bold uppercase tracking-widest text-slate-500 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">Aug 2020 — Jun 2021</span>
+            </div>
+            <p class="mt-2 text-slate-600 dark:text-slate-400">Hyderabad, India</p>
+            <ul class="mt-4 space-y-2 text-slate-700 dark:text-slate-300">
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Built 3D HMI systems for General Motors’ Hummer EV using Unreal Engine.</span></li>
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Engineered triangulation-based mesh generation from point cloud data for Ultra Cruise simulation workflows.</span></li>
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Improved Android performance using PSO caching and shader-driven HDRI reflections.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Loop Reality -->
+        <div class="relative flex gap-6">
+          <div class="relative z-10 size-11 rounded-full bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-800 flex items-center justify-center">
+            <span class="material-symbols-outlined text-slate-500">view_in_ar</span>
+          </div>
+          <div class="flex-1">
+            <div class="flex flex-wrap items-baseline justify-between gap-2">
+              <h3 class="text-xl font-extrabold">Game Developer — Loop Reality Pvt Ltd</h3>
+              <span class="text-xs font-bold uppercase tracking-widest text-slate-500 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">Jun 2017 — Aug 2020</span>
+            </div>
+            <p class="mt-2 text-slate-600 dark:text-slate-400">Hyderabad, India</p>
+            <ul class="mt-4 space-y-2 text-slate-700 dark:text-slate-300">
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Developed multiplayer VR systems and interactive experiences for desktop VR and mobile platforms.</span></li>
+              <li class="flex gap-2"><span class="material-symbols-outlined text-primary text-[18px] mt-0.5">check_circle</span><span>Delivered cross-platform VR experiences for Oculus Go, Android, and iOS.</span></li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-24 h-fit">
+      <div class="rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 p-6">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="material-symbols-outlined text-primary">bolt</span>
+          <h3 class="text-lg font-bold">Technical Skills</h3>
+        </div>
+        <div class="space-y-5">
+          <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Engine & Languages</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">UE4 / UE5</span>
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">C++</span>
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">C#</span>
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">Java</span>
+            </div>
+          </div>
+          <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Gameplay</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg bg-primary/10 text-primary text-sm font-bold">GAS</span>
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">Character Systems</span>
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">Combat Mechanics</span>
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">AoE Systems</span>
+            </div>
+          </div>
+          <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Networking</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">Replication</span>
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">RPCs</span>
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">Server-authoritative</span>
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">Optimization</span>
+            </div>
+          </div>
+          <div>
+            <p class="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">Rendering & Tools</p>
+            <div class="flex flex-wrap gap-2">
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">360 Capture</span>
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">FFmpeg Stitching</span>
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">Point Clouds</span>
+              <span class="px-3 py-1.5 rounded-lg border border-slate-200 dark:border-slate-800 text-sm font-medium">PCG</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-2xl bg-primary text-white p-6">
+        <div class="flex items-center gap-2 mb-2">
+          <span class="material-symbols-outlined">handshake</span>
+          <h3 class="font-bold">Open to roles</h3>
+        </div>
+        <p class="text-sm text-white/85 leading-relaxed">Unreal C++ • Gameplay • Tools • Rendering pipelines • Multiplayer</p>
+        <a class="mt-4 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-white text-primary font-bold py-3 hover:bg-slate-100 transition"
+           href="contact.html">
+          Start a conversation
+          <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </a>
+      </div>
+    </aside>
+  </div>
+</main>
+
+
+<footer class="border-t border-slate-200 dark:border-slate-800 py-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-slate-500">© <span data-year></span> Stephen Cherlapally. All rights reserved.</p>
+    <div class="flex items-center gap-5 text-sm">
+      <a class="text-slate-500 hover:text-primary" href="projects.html">Projects</a>
+      <a class="text-slate-500 hover:text-primary" href="experience.html">Experience</a>
+      <a class="text-slate-500 hover:text-primary" href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,218 +1,167 @@
-	<!DOCTYPE html>
-	<html lang="zxx" class="no-js">
-	<head>
-		<!-- Mobile Specific Meta -->
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<!-- Favicon-->
-		<link rel="shortcut icon" href="img/fav.png">
-		<!-- Author Meta -->
-		<meta name="author" content="colorlib">
-		<!-- Meta Description -->
-		<meta name="description" content="">
-		<!-- Meta Keyword -->
-		<meta name="keywords" content="">
-		<!-- meta character set -->
-		<meta charset="UTF-8">
-		<!-- Site Title -->
-		<title>Personal</title>
+<!DOCTYPE html>
+<html lang="en" class="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Stephen Cherlapally</title>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#137fec",
+            "background-light": "#fcfcfc",
+            "background-dark": "#101922",
+          },
+          fontFamily: { display: ["Manrope", "sans-serif"] },
+          borderRadius: { DEFAULT: "0.25rem", lg: "0.5rem", xl: "0.75rem", full: "9999px" },
+        },
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/site.css" />
+  <script defer src="assets/site.js"></script>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 antialiased overflow-x-hidden">
+<a id="top"></a>
+<header class="sticky top-0 z-50 w-full border-b border-slate-200/60 dark:border-slate-800 bg-white/80 dark:bg-background-dark/80 glass">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 h-16 flex items-center justify-between">
+    <a class="flex items-center gap-3" href="index.html" aria-label="Go to Home">
+      <div class="size-9 bg-primary rounded-xl flex items-center justify-center text-white shadow-sm">
+        <span class="material-symbols-outlined text-xl">deployed_code</span>
+      </div>
+      <div class="leading-tight">
+        <div class="text-sm font-extrabold tracking-tight">Stephen Cherlapally</div>
+        <div class="text-[11px] text-slate-500 dark:text-slate-400 -mt-0.5">Senior Unreal Engine Developer</div>
+      </div>
+    </a>
 
-		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
-			<!--
-			CSS
-			============================================= -->
-			<link rel="stylesheet" href="css/linearicons.css">
-			<link rel="stylesheet" href="css/font-awesome.min.css">
-			<link rel="stylesheet" href="css/bootstrap.css">
-			<link rel="stylesheet" href="css/magnific-popup.css">			
-			<link rel="stylesheet" href="css/nice-select.css">							
-			<link rel="stylesheet" href="css/animate.min.css">
-			<link rel="stylesheet" href="css/owl.carousel.css">			
-			<link rel="stylesheet" href="css/jquery-ui.css">			
-			<link rel="stylesheet" href="css/main.css">
-		</head>
-		<body>	
-		  <header id="header">
-		    <div class="container main-menu">
-		    	<div class="row align-items-center justify-content-between d-flex">
-			      <div id="logo">
-			        <a href="index.html"><img src="img/logo.png" alt="" title="" /></a>
-			      </div>
-			      <nav id="nav-menu-container">
-			        <ul class="nav-menu">
-			          <li><a href="index.html">Home</a></li>
-			          <li><a href="about.html">About</a></li>
-			          <li><a href="services.html">Services</a></li>
-			          <li><a href="portfolio.html">Portfolio</a></li>
-			          <li><a href="price.html">Pricing</a></li>
-			          <li class="menu-has-children"><a href="">Blog</a>
-			            <ul>
-			              <li><a href="blog-home.html">Blog Home</a></li>
-			              <li><a href="blog-single.html">Blog Single</a></li>
-			            </ul>
-			          </li>	
-			          <li class="menu-has-children"><a href="">Pages</a>
-			            <ul>
-		            	  <li><a href="elements.html">Elements</a></li>
-				          <li class="menu-has-children"><a href="">Level 2 </a>
-				            <ul>
-				              <li><a href="#">Item One</a></li>
-				              <li><a href="#">Item Two</a></li>
-				            </ul>
-				          </li>					                		
-			            </ul>
-			          </li>					          					          		          
-			          <li><a href="contact.html">Contact</a></li>
-			        </ul>
-			      </nav><!-- #nav-menu-container -->		    		
-		    	</div>
-		    </div>
-		  </header><!-- #header -->
-	  
-			<!-- start banner Area -->
-			<section class="relative about-banner">	
-				<div class="overlay overlay-bg"></div>
-				<div class="container">				
-					<div class="row d-flex align-items-center justify-content-center">
-						<div class="about-content col-lg-12">
-							<h1 class="text-white">
-								Contact Us				
-							</h1>	
-							<p class="text-white link-nav"><a href="index.html">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="contact.html"> Contact Us</a></p>
-						</div>	
-					</div>
-				</div>
-			</section>
-			<!-- End banner Area -->				  
+    <nav class="hidden md:flex items-center gap-10">
+      <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="experience.html">Experience</a>
+<a class="text-sm font-semibold hover:text-primary transition-colors" href="projects.html">Projects</a>
+<a class="text-sm font-bold text-primary border-b-2 border-primary pb-1" href="contact.html">Contact</a>
 
-			<!-- Start contact-page Area -->
-			<section class="contact-page-area section-gap">
-				<div class="container">
-					<div class="row">
-						<div class="map-wrap" style="width:100%; height: 445px;" id="map"></div>
-						<div class="col-lg-4 d-flex flex-column address-wrap">
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-home"></span>
-								</div>
-								<div class="contact-details">
-									<h5>Binghamton, New York</h5>
-									<p>
-										4343 Hinkle Deegan Lake Road
-									</p>
-								</div>
-							</div>
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-phone-handset"></span>
-								</div>
-								<div class="contact-details">
-									<h5>00 (958) 9865 562</h5>
-									<p>Mon to Fri 9am to 6 pm</p>
-								</div>
-							</div>
-							<div class="single-contact-address d-flex flex-row">
-								<div class="icon">
-									<span class="lnr lnr-envelope"></span>
-								</div>
-								<div class="contact-details">
-									<h5>support@colorlib.com</h5>
-									<p>Send us your query anytime!</p>
-								</div>
-							</div>														
-						</div>
-						<div class="col-lg-8">
-							<form class="form-area contact-form text-right" id="myForm" action="mail.php" method="post">
-								<div class="row">	
-									<div class="col-lg-6 form-group">
-										<input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
-									
-										<input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
+    </nav>
 
-										<input name="subject" placeholder="Enter subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter subject'" class="common-input mb-20 form-control" required="" type="text">
-									</div>
-									<div class="col-lg-6 form-group">
-										<textarea class="common-textarea form-control" name="message" placeholder="Enter Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Messege'" required=""></textarea>				
-									</div>
-									<div class="col-lg-12">
-										<div class="alert-msg" style="text-align: left;"></div>
-										<button class="genric-btn primary" style="float: right;">Send Message</button>											
-									</div>
-								</div>
-							</form>	
-						</div>
-					</div>
-				</div>	
-			</section>
-			<!-- End contact-page Area -->
+    <div class="flex items-center gap-2">
+      <a class="hidden sm:inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2 text-sm font-bold text-white hover:bg-primary/90 transition shadow-lg shadow-primary/20" href="assets/Stephen_Cherlapally_Resume.pdf" target="_blank" rel="noreferrer">
+        <span class="material-symbols-outlined text-[18px]">download</span>
+        Resume
+      </a>
+      <button data-theme-toggle onclick="toggleTheme()" class="inline-flex items-center justify-center size-10 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition" aria-label="Toggle dark mode">
+        <span class="material-symbols-outlined text-[20px]">dark_mode</span>
+      </button>
+      <button onclick="toggleMenu()" class="md:hidden inline-flex items-center justify-center size-10 rounded-full border border-slate-200 dark:border-slate-800 hover:bg-slate-50 dark:hover:bg-slate-800 transition" aria-label="Open menu">
+        <span class="material-symbols-outlined text-[22px]">menu</span>
+      </button>
+    </div>
+  </div>
 
-            <!-- start footer Area -->
-            <footer class="footer-area section-gap">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-6 col-sm-6">
-                            <div class="single-footer-widget">
-                                <h4>About Me</h4>
-                                <p>
-                                    We have tested a number of registry fix and clean utilities and present our top 3 list on our site for your convenience.
-                                </p>
-                                <p class="footer-text"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
-                            </div>
-                        </div>
-                        <div class="col-lg-5 col-md-6 col-sm-6">
-                            <div class="single-footer-widget">
-                                <h4>Newsletter</h4>
-                                <p>Stay updated with our latest trends</p>
-								<div class="" id="mc_embed_signup">
-									 <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get">
-									  <div class="input-group">
-									    <input type="text" class="form-control" name="EMAIL" placeholder="Enter Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Email Address '" required="" type="email">
-									    <div class="input-group-btn">
-									      <button class="btn btn-default" type="submit">
-									        <span class="lnr lnr-arrow-right"></span>
-									      </button>    
-									    </div>
-									    	<div class="info"></div>  
-									  </div>
-									</form> 
-								</div>
-                            </div>
-                        </div>
-                        <div class="col-lg-2 col-md-6 col-sm-6 social-widget">
-                            <div class="single-footer-widget">
-                                <h4>Follow Me</h4>
-                                <p>Let us be social</p>
-                                <div class="footer-social d-flex align-items-center">
-                                    <a href="#"><i class="fa fa-facebook"></i></a>
-                                    <a href="#"><i class="fa fa-twitter"></i></a>
-                                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                                    <a href="#"><i class="fa fa-behance"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-            <!-- End footer Area -->		
+  <div data-mobile-menu class="md:hidden hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-background-dark/95 glass">
+    <div class="max-w-7xl mx-auto px-6 py-4">
+      <div class="grid gap-1">
+        <a class="block px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 " href="index.html">Home</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 " href="experience.html">Experience</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 " href="projects.html">Projects</a>
+<a class="block px-4 py-3 rounded-xl hover:bg-slate-100 dark:hover:bg-slate-800 text-primary font-bold" href="contact.html">Contact</a>
 
-			<script src="js/vendor/jquery-2.2.4.min.js"></script>
-			<script src="js/popper.min.js"></script>
-			<script src="js/vendor/bootstrap.min.js"></script>			
-			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBhOdIF3Y9382fqJYt5I_sswSrEw5eihAA"></script>			
-  			<script src="js/easing.min.js"></script>			
-			<script src="js/hoverIntent.js"></script>
-			<script src="js/superfish.min.js"></script>	
-			<script src="js/jquery.ajaxchimp.min.js"></script>
-			<script src="js/jquery.magnific-popup.min.js"></script>	
-    		<script src="js/jquery.tabs.min.js"></script>						
-			<script src="js/jquery.nice-select.min.js"></script>	
-            <script src="js/isotope.pkgd.min.js"></script>			
-			<script src="js/waypoints.min.js"></script>
-			<script src="js/jquery.counterup.min.js"></script>
-			<script src="js/simple-skillbar.js"></script>							
-			<script src="js/owl.carousel.min.js"></script>							
-			<script src="js/mail-script.js"></script>	
-			<script src="js/main.js"></script>	
-		</body>
-	</html>
+        <a class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-primary py-3 text-sm font-bold text-white" href="assets/Stephen_Cherlapally_Resume.pdf" target="_blank" rel="noreferrer">
+          <span class="material-symbols-outlined text-[18px]">download</span>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+<main class="max-w-7xl mx-auto px-6 lg:px-12 py-14">
+  <a id="contact"></a>
+  <div class="max-w-2xl mb-10">
+    <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">Let’s build something <span class="text-primary">solid</span>.</h1>
+    <p class="mt-5 text-lg text-slate-600 dark:text-slate-400 leading-relaxed">
+      If you’re hiring for Unreal C++ / gameplay / tools — or want help building a production-grade Unreal plugin pipeline —
+      I’m happy to talk.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+    
+
+    <aside class="lg:col-span-5 space-y-6">
+      <div class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 p-8 shadow-sm">
+        <h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-6">Contact Info</h3>
+        <div class="space-y-5">
+          <div class="flex items-center gap-4">
+            <div class="size-12 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined">mail</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Email</p>
+              <a class="text-lg font-semibold hover:underline" href="mailto:stephencherlapally@gmail.com">stephencherlapally@gmail.com</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="size-12 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined">call</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Phone</p>
+              <a class="text-lg font-semibold hover:underline" href="tel:+919059040421">+91 90590 40421</a>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <div class="size-12 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+              <span class="material-symbols-outlined">location_on</span>
+            </div>
+            <div>
+              <p class="text-xs font-bold text-slate-400 uppercase tracking-widest">Location</p>
+              <p class="text-lg font-semibold">Hyderabad, India</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="rounded-3xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900/40 p-8 shadow-sm">
+        <h3 class="text-sm font-bold uppercase tracking-widest text-primary mb-6">Links</h3>
+        <div class="grid gap-3">
+          <a class="flex items-center justify-between rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/20 p-4 hover:border-primary transition"
+             href="https://www.linkedin.com/in/stephen-cherla-901220127/" title="Add your LinkedIn URL">
+            <span class="font-bold">LinkedIn</span>
+            <span class="material-symbols-outlined text-slate-300">north_east</span>
+          </a>
+          <a class="flex items-center justify-between rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/20 p-4 hover:border-primary transition"
+             href="https://github.com/StephenCherla" title="Add your GitHub URL">
+            <span class="font-bold">GitHub</span>
+            <span class="material-symbols-outlined text-slate-300">north_east</span>
+          </a>
+          <a class="flex items-center justify-between rounded-2xl border border-slate-200 dark:border-slate-800 bg-white/60 dark:bg-slate-900/20 p-4 hover:border-primary transition"
+             href="assets/Stephen_Cherlapally_Resume.pdf" target="_blank" rel="noreferrer">
+            <span class="font-bold">Resume (PDF)</span>
+            <span class="material-symbols-outlined text-slate-300">open_in_new</span>
+          </a>
+        </div>
+        <p class="text-xs text-slate-500 mt-4">Replace “#” with your real profile URLs.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+
+<footer class="border-t border-slate-200 dark:border-slate-800 py-10">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
+    <p class="text-sm text-slate-500">© <span data-year></span> Stephen Cherlapally. All rights reserved.</p>
+    <div class="flex items-center gap-5 text-sm">
+      <a class="text-slate-500 hover:text-primary" href="projects.html">Projects</a>
+      <a class="text-slate-500 hover:text-primary" href="experience.html">Experience</a>
+      <a class="text-slate-500 hover:text-primary" href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

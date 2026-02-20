@@ -1,0 +1,33 @@
+:root{
+  --primary:#137fec;
+}
+html { scroll-behavior:smooth; }
+.hero-gradient{
+  background: radial-gradient(1200px 600px at 20% 10%, rgba(19,127,236,0.16), rgba(19,127,236,0.0) 60%),
+              radial-gradient(900px 500px at 85% 20%, rgba(56,189,248,0.12), rgba(56,189,248,0.0) 55%);
+}
+.glass{
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+/* Projects accordion */
+[data-project-toggle]{
+  cursor: pointer;
+}
+.project-details{
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 320ms ease, opacity 220ms ease;
+}
+.is-expanded .project-details{
+  max-height: 520px;
+  opacity: 1;
+}
+.project-chevron{
+  transition: transform 200ms ease;
+}
+.is-expanded .project-chevron{
+  transform: rotate(180deg);
+}
